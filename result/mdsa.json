@@ -1,0 +1,150 @@
+{
+    "AsyncMessenger::Worker-0": {
+        "msgr_recv_messages": 34,
+        "msgr_send_messages": 31,
+        "msgr_recv_bytes": 96368,
+        "msgr_send_bytes": 16832,
+        "msgr_created_connections": 2,
+        "msgr_active_connections": 1,
+        "msgr_running_total_time": 0.008122211,
+        "msgr_running_send_time": 0.002312330,
+        "msgr_running_recv_time": 0.005183943,
+        "msgr_running_fast_dispatch_time": 0.000822481,
+        "msgr_send_messages_queue_lat": {
+            "avgcount": 31,
+            "sum": 0.003060449,
+            "avgtime": 0.000098724
+        },
+        "msgr_handle_ack_lat": {
+            "avgcount": 0,
+            "sum": 0.000000000,
+            "avgtime": 0.000000000
+        }
+    },
+    "AsyncMessenger::Worker-1": {
+        "msgr_recv_messages": 1,
+        "msgr_send_messages": 23,
+        "msgr_recv_bytes": 160,
+        "msgr_send_bytes": 75632,
+        "msgr_created_connections": 2,
+        "msgr_active_connections": 2,
+        "msgr_running_total_time": 0.003669637,
+        "msgr_running_send_time": 0.001408134,
+        "msgr_running_recv_time": 0.002044140,
+        "msgr_running_fast_dispatch_time": 0.000000000,
+        "msgr_send_messages_queue_lat": {
+            "avgcount": 22,
+            "sum": 0.000730511,
+            "avgtime": 0.000033205
+        },
+        "msgr_handle_ack_lat": {
+            "avgcount": 0,
+            "sum": 0.000000000,
+            "avgtime": 0.000000000
+        }
+    },
+    "AsyncMessenger::Worker-2": {
+        "msgr_recv_messages": 0,
+        "msgr_send_messages": 1,
+        "msgr_recv_bytes": 0,
+        "msgr_send_bytes": 0,
+        "msgr_created_connections": 1,
+        "msgr_active_connections": 1,
+        "msgr_running_total_time": 0.000312366,
+        "msgr_running_send_time": 0.000000000,
+        "msgr_running_recv_time": 0.000255390,
+        "msgr_running_fast_dispatch_time": 0.000000000,
+        "msgr_send_messages_queue_lat": {
+            "avgcount": 0,
+            "sum": 0.000000000,
+            "avgtime": 0.000000000
+        },
+        "msgr_handle_ack_lat": {
+            "avgcount": 0,
+            "sum": 0.000000000,
+            "avgtime": 0.000000000
+        }
+    },
+    "cct": {
+        "total_workers": 0,
+        "unhealthy_workers": 0
+    },
+    "mempool": {
+        "bloom_filter_bytes": 0,
+        "bloom_filter_items": 0,
+        "bluestore_alloc_bytes": 0,
+        "bluestore_alloc_items": 0,
+        "bluestore_cache_data_bytes": 0,
+        "bluestore_cache_data_items": 0,
+        "bluestore_cache_onode_bytes": 0,
+        "bluestore_cache_onode_items": 0,
+        "bluestore_cache_meta_bytes": 0,
+        "bluestore_cache_meta_items": 0,
+        "bluestore_cache_other_bytes": 0,
+        "bluestore_cache_other_items": 0,
+        "bluestore_Buffer_bytes": 0,
+        "bluestore_Buffer_items": 0,
+        "bluestore_Extent_bytes": 0,
+        "bluestore_Extent_items": 0,
+        "bluestore_Blob_bytes": 0,
+        "bluestore_Blob_items": 0,
+        "bluestore_SharedBlob_bytes": 0,
+        "bluestore_SharedBlob_items": 0,
+        "bluestore_inline_bl_bytes": 0,
+        "bluestore_inline_bl_items": 0,
+        "bluestore_fsck_bytes": 0,
+        "bluestore_fsck_items": 0,
+        "bluestore_txc_bytes": 0,
+        "bluestore_txc_items": 0,
+        "bluestore_writing_deferred_bytes": 0,
+        "bluestore_writing_deferred_items": 0,
+        "bluestore_writing_bytes": 0,
+        "bluestore_writing_items": 0,
+        "bluefs_bytes": 0,
+        "bluefs_items": 0,
+        "bluefs_file_reader_bytes": 0,
+        "bluefs_file_reader_items": 0,
+        "bluefs_file_writer_bytes": 0,
+        "bluefs_file_writer_items": 0,
+        "buffer_anon_bytes": 147975,
+        "buffer_anon_items": 25,
+        "buffer_meta_bytes": 0,
+        "buffer_meta_items": 0,
+        "osd_bytes": 0,
+        "osd_items": 0,
+        "osd_mapbl_bytes": 0,
+        "osd_mapbl_items": 0,
+        "osd_pglog_bytes": 0,
+        "osd_pglog_items": 0,
+        "osdmap_bytes": 0,
+        "osdmap_items": 0,
+        "osdmap_mapping_bytes": 0,
+        "osdmap_mapping_items": 0,
+        "pgmap_bytes": 0,
+        "pgmap_items": 0,
+        "mds_co_bytes": 928,
+        "mds_co_items": 2,
+        "unittest_1_bytes": 0,
+        "unittest_1_items": 0,
+        "unittest_2_bytes": 0,
+        "unittest_2_items": 0
+    },
+    "throttle-msgr_dispatch_throttler-mds": {
+        "val": 0,
+        "max": 104857600,
+        "get_started": 0,
+        "get": 35,
+        "get_sum": 91621,
+        "get_or_fail_fail": 0,
+        "get_or_fail_success": 35,
+        "take": 0,
+        "take_sum": 0,
+        "put": 35,
+        "put_sum": 91621,
+        "wait": {
+            "avgcount": 0,
+            "sum": 0.000000000,
+            "avgtime": 0.000000000
+        }
+    }
+}
