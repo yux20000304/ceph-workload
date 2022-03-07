@@ -1,0 +1,986 @@
+{
+    "AsyncMessenger::Worker-0": {
+        "msgr_recv_messages": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network received messages",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_send_messages": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network sent messages",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_recv_bytes": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network received bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "bytes"
+        },
+        "msgr_send_bytes": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network sent bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "bytes"
+        },
+        "msgr_created_connections": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Created connection number",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_active_connections": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Active connection number",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_total_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of thread running",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_send_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of message sending",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_recv_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of message receiving",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_fast_dispatch_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of fast dispatch",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_send_messages_queue_lat": {
+            "type": 5,
+            "metric_type": "gauge",
+            "value_type": "real-integer-pair",
+            "description": "Network sent messages lat",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_handle_ack_lat": {
+            "type": 5,
+            "metric_type": "gauge",
+            "value_type": "real-integer-pair",
+            "description": "Connection handle ack lat",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        }
+    },
+    "AsyncMessenger::Worker-1": {
+        "msgr_recv_messages": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network received messages",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_send_messages": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network sent messages",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_recv_bytes": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network received bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "bytes"
+        },
+        "msgr_send_bytes": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network sent bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "bytes"
+        },
+        "msgr_created_connections": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Created connection number",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_active_connections": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Active connection number",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_total_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of thread running",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_send_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of message sending",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_recv_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of message receiving",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_fast_dispatch_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of fast dispatch",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_send_messages_queue_lat": {
+            "type": 5,
+            "metric_type": "gauge",
+            "value_type": "real-integer-pair",
+            "description": "Network sent messages lat",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_handle_ack_lat": {
+            "type": 5,
+            "metric_type": "gauge",
+            "value_type": "real-integer-pair",
+            "description": "Connection handle ack lat",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        }
+    },
+    "AsyncMessenger::Worker-2": {
+        "msgr_recv_messages": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network received messages",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_send_messages": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network sent messages",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_recv_bytes": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network received bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "bytes"
+        },
+        "msgr_send_bytes": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Network sent bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "bytes"
+        },
+        "msgr_created_connections": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Created connection number",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_active_connections": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Active connection number",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_total_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of thread running",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_send_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of message sending",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_recv_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of message receiving",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_running_fast_dispatch_time": {
+            "type": 1,
+            "metric_type": "gauge",
+            "value_type": "real",
+            "description": "The total time of fast dispatch",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_send_messages_queue_lat": {
+            "type": 5,
+            "metric_type": "gauge",
+            "value_type": "real-integer-pair",
+            "description": "Network sent messages lat",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "msgr_handle_ack_lat": {
+            "type": 5,
+            "metric_type": "gauge",
+            "value_type": "real-integer-pair",
+            "description": "Connection handle ack lat",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        }
+    },
+    "cct": {
+        "total_workers": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "Total workers",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "unhealthy_workers": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "Unhealthy workers",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        }
+    },
+    "mempool": {
+        "bloom_filter_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bloom_filter total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bloom_filter_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bloom_filter total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_alloc_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_alloc total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_alloc_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_alloc total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_cache_data_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_cache_data total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_cache_data_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_cache_data total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_cache_onode_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_cache_onode total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_cache_onode_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_cache_onode total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_cache_meta_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_cache_meta total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_cache_meta_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_cache_meta total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_cache_other_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_cache_other total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_cache_other_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_cache_other total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_Buffer_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_Buffer total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_Buffer_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_Buffer total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_Extent_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_Extent total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_Extent_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_Extent total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_Blob_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_Blob total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_Blob_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_Blob total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_SharedBlob_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_SharedBlob total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_SharedBlob_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_SharedBlob total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_inline_bl_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_inline_bl total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_inline_bl_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_inline_bl total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_fsck_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_fsck total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_fsck_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_fsck total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_txc_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_txc total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_txc_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_txc total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_writing_deferred_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_writing_deferred total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_writing_deferred_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_writing_deferred total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_writing_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_writing total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluestore_writing_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluestore_writing total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluefs_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluefs total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluefs_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluefs total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluefs_file_reader_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluefs_file_reader total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluefs_file_reader_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluefs_file_reader total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluefs_file_writer_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluefs_file_writer total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "bluefs_file_writer_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool bluefs_file_writer total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "buffer_anon_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool buffer_anon total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "buffer_anon_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool buffer_anon total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "buffer_meta_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool buffer_meta total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "buffer_meta_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool buffer_meta total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "osd_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool osd total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "osd_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool osd total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "osd_mapbl_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool osd_mapbl total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "osd_mapbl_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool osd_mapbl total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "osd_pglog_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool osd_pglog total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "osd_pglog_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool osd_pglog total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "osdmap_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool osdmap total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "osdmap_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool osdmap total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "osdmap_mapping_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool osdmap_mapping total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "osdmap_mapping_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool osdmap_mapping total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "pgmap_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool pgmap total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "pgmap_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool pgmap total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "mds_co_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool mds_co total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "mds_co_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool mds_co total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "unittest_1_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool unittest_1 total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "unittest_1_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool unittest_1 total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "unittest_2_bytes": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool unittest_2 total bytes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "unittest_2_items": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "mempool unittest_2 total items",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        }
+    },
+    "throttle-msgr_dispatch_throttler-mds": {
+        "val": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "Currently taken slots",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "max": {
+            "type": 2,
+            "metric_type": "gauge",
+            "value_type": "integer",
+            "description": "Max value for throttle",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "get_started": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Number of get calls, increased before wait",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "get": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Gets",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "get_sum": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Got data",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "get_or_fail_fail": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Get blocked during get_or_fail",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "get_or_fail_success": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Successful get during get_or_fail",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "take": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Takes",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "take_sum": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Taken data",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "put": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Puts",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "put_sum": {
+            "type": 10,
+            "metric_type": "counter",
+            "value_type": "integer",
+            "description": "Put data",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        },
+        "wait": {
+            "type": 5,
+            "metric_type": "gauge",
+            "value_type": "real-integer-pair",
+            "description": "Waiting latency",
+            "nick": "",
+            "priority": 0,
+            "units": "none"
+        }
+    }
+}
