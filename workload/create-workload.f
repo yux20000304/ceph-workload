@@ -1,4 +1,4 @@
-define fileset name=testF,entries=10000,filesize=16k,prealloc,path=/mnt/cephfs
+define fileset name=testF,entries=1000,filesize=1k,prealloc,path=/mnt/cephfs
 
 define process name=readerP,instances=1 {
   thread name=readerT,instances=1 {
@@ -10,4 +10,4 @@ define process name=readerP,instances=1 {
     flowop listdir name=listOP,filesetname=testF
   }
 }
-run 60
+run 100
