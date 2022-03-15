@@ -5,10 +5,12 @@ filebench_file="/home/yyx/project/ceph-workload/workload/create-workload.f"
 reslut_dir="/home/yyx/project/ceph-workload/result"
 mount_dir="/mnt/cephfs"
 
+echo 0 > /proc/sys/kernel/randomize_va_space
+
 cd ${work_dir}
 
 #启动一个开启lttng trace的测试集群
-../src/vstart.sh -d -n -l -e -o "osd_tracing = true"
+../src/vstart.sh -n -l -e -o "osd_tracing = true" --without-dashboard
 
 #建立挂载文件夹
 rm -rf ${mount_dir}
